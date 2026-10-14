@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ckb" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داوەتنامەی هاوسەرگیری سەرکەوت و تانیا</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <style>
+        body { font-family: 'Noto Naskh Arabic', serif; }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#0d131a] text-[#f4efe6] min-h-screen flex items-center justify-center p-4 relative overflow-x-hidden">
+
+    <div class="max-w-xl w-full bg-[#161f2b]/90 border-2 border-[#d4af37] rounded-3xl p-8 text-center shadow-2xl backdrop-blur-md relative z-10">
+        <div class="text-sm tracking-widest text-[#d4af37] mb-2 font-bold">داوەتنامەی هاوسەرگیری</div>
+        
+        <h1 class="text-4xl md:text-5xl font-bold gold-gradient-text my-4">
+            سەرکەوت <span class="text-red-500">🤍</span> تانیا
+        </h1>
+
+        <p class="text-lg text-gray-300 italic mb-6">
+            «بەخۆشحاڵییەوە داوەتکراون بۆ بەشدارییکردن لە ئاهەنگی هاوسەرگیریمان»
+        </p>
+
+        <div class="my-6 p-4 border-t border-b border-[#d4af37]/30">
+            <div class="text-xl text-[#fcf6ba] font-semibold mb-2">📅 بەرواری ئاهەنگ</div>
+            <div class="text-2xl text-white font-bold">پێنجشەممە، ١٥ی تشرینی دووەمی ٢٠٢٦</div>
+            <div class="text-md text-gray-300 mt-1">⏰ کات: ٥:٠٠ی ئێوارە</div>
+            <div class="text-md text-[#d4af37] mt-2">📍 هۆڵی ئاهەنگەکانی کریستاڵ - کەرکووک</div>
+        </div>
+
+        <div class="bg-[#0d131a]/60 p-4 rounded-xl border border-[#d4af37]/20 my-6">
+            <p class="text-sm text-gray-300 italic">
+                "خۆشحاڵ دەبین بە هاتنتان و بەشداریکردنتان لەم یادە پڕ لە خۆشییەدا"
+            </p>
+        </div>
+
+        <button onclick="fireConfetti()" class="w-full py-3 bg-gradient-to-r from-[#b38728] to-[#fcf6ba] text-gray-900 font-bold rounded-full shadow-lg hover:opacity-90 transition transform active:scale-95">
+            🎉 پیرۆزبایی بکە (تەقاندنی یاری ئاگرین)
+        </button>
+    </div>
+
+    <script>
+        function fireConfetti() {
+            confetti({
+                particleCount: 100,
+                spread: 70,
+                origin: { y: 0.6 }
+            });
+        }
+    </script>
+</body>
+</html>
